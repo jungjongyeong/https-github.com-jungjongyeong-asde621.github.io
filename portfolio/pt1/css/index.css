@@ -1,0 +1,102 @@
+/* 비주얼 */
+
+
+/* 제품 */
+.product {height:120vh;}
+.product .bg1 { position: relative; }
+.product .bg1 img { width:100%;}
+.product .txt1 { position: absolute; top:20%; left:20%; }
+.product .txt1 h2{ font-size:50px;}
+.product .txt1 span{ display: block; font-size:20px; padding:20px 0 0;}
+.product .img1 ul { position: absolute; top:55%; left:20%; }
+.product .img1 ul li { display: inline-block; }
+.product .img1 ul li button { background: none;}
+.product .img1 ul li img { width:30px; height:30px;}
+.btn_play { display: none;}
+.product .product_link { width: 59rem; height:100px; margin: 0 auto; text-align: center; font-size: 0; background: #fff;}
+.product .product_link li { display: inline-block; padding:.5rem .225rem 0;letter-spacing: -0.025rem;}
+.product .product_link li a { display: block; position: relative; padding: 0 .6rem; font-weight: bold; font-weight:bold; color:#9b9b9b; font-size: .85rem; line-height: 1.35rem; transition: all .4s;}
+.product .product_link li a:hover { background: #999; color:#fff;}
+.product .product_link li a:after { content: ""; position: absolute; right:0; z-index: -1;width: 1rem; height: 1.35rem; background: #999; transform: skewX(8deg); opacity: 0; }
+.product .product_link li a:hover:after { animation: ani 1 .3s .4s both;}
+
+@keyframes ani {
+    0% { right: 0; opacity: 0;}
+    100% { right:-0.25rem; opacity: 1;}
+}
+
+/* about */
+.about { display: flex;height: 100vh; background: #d6d6d6;}
+.about > div { width: 64rem; margin:auto;}
+.h2 { font-size: 1.75rem; color:#000; letter-spacing: -0.0125rem; font-weight: 500;}
+.h2 span { color:#da217e;}
+.about img { width: 100%;}
+
+/* news */
+.news { display: flex; height: 100vh; }
+.news > div { width: 64rem; margin:auto;}
+.news .news_list { padding:0 0 1.5rem;}
+.news .news_list .right { float: right; position:relative; width: 27.5rem;}
+.news .news_list .right .more { position: absolute; right: 0; top: 1rem; width: 6.15rem; border: 1px solid #eee; line-height:1.9rem; text-align: center; color:#333; font-size: .7rem;}
+.news .news_list .right h2 { padding: 1.4rem 0 1.25rem; line-height: 1; font-size: 1.6rem; color:#333;}
+.news .news_list .right .list li { line-height: 3rem;}
+.news .news_list .right .list li ~ li { border-top:1px solid #eee;}
+.news .news_list .right .list li:after { content: ""; display: block; clear:both;}
+.news .news_list .right .list a { display: block; float: left; font-size: .8rem; color:#333;}
+.news .news_list .right .list span { float: right; font-size: .7rem; color:#858585;}
+.news .news_list .right .list span:before { content:url(../images/ico_time.png); margin: 0 .2rem; vertical-align: -1px;}
+
+.news .news_list .left { float: left; position: relative;}
+.news .news_list .left div { position: absolute; left:0; right: 0; top: 50%; transform:translateY(-50%); text-align: center;}
+.news .news_list .left div p { position: relative; padding: 0 0 2rem; font-size: 1.5rem; color:#fff; font-weight: bold; line-height: 2.2rem;}
+.news .news_list .left div p::before { content: ""; position: absolute; left:50%; top: -1.25rem; width: .3rem; height: 1rem; background: #da217e; transform: rotate(55deg);}
+.news .news_list .left a { display: block; margin: 0 auto; width: 6.25rem; border: 1px solid #fff; color:#fff; line-height: 2rem; text-align: center; font-size:.7rem;}
+
+.news .stock_list > div { float: left; width:50%; height: 6rem; background: #f4f4f4;}
+.news .stock_list .info h2 { float: left; position: relative; width: 11.5rem; line-height: 6rem; text-align: center; font-size: 1.6rem; color:#fff; background: #da217e;}
+.news .stock_list .info h2:after { content: ""; position: absolute; right:-0.65rem; top: 0; height: 100%; width: 1.5rem; background: #da217e; transform: skewX(10deg);}
+.news .stock_list .info p {  padding:0 0 0 4.75rem; line-height: 6rem;}
+.news .stock_list .info p b{ font-size: 2.15rem; color:#333;padding:0 0 0 3rem}
+.news .stock_list .info p span { font-size: .65rem; color:#858585;}
+.news .stock_list .stock ul { display: flex; flex-direction: column; flex-wrap: wrap; padding: 1.25rem 0; height:6rem; box-sizing: border-box;}
+.news .stock_list .stock ul li { height: 50%; padding:0 1.85rem; line-height:2.1rem;}
+.news .stock_list .stock ul li:after { content: ""; display: block; clear: both;}
+.news .stock_list .stock ul li span { float: left; font-size: .75rem; color:#858585;}
+.news .stock_list .stock ul li strong { float: right; font-size: 1.1rem; color:#333;}
+.news .stock_list .stock ul li strong img { margin: 0 .3rem 0 0;}
+
+/* client */
+.client { display: flex; height: 100vh; background: #f4f4f4;}
+.client > div { width: 64rem; margin:auto;}
+.client .index_logo {  width:100%; height:300px;  text-align: center;}
+.client .index_logo li{ display: inline-block;}
+.client .index_logo a { display: block; width:200px; height:100px; background: no-repeat center;}
+.client .logo1 a { background-image: url(../images/ico_client_img1.png)}
+.client .logo2 a { background-image: url(../images/ico_client_img2.png)}
+.client .logo3 a { background-image: url(../images/ico_client_img3.png)}
+.client .logo4 a { background-image: url(../images/ico_client_img4.png)}
+.client .logo5 a { background-image: url(../images/ico_client_img5.png)}
+.client .logo6 a { background-image: url(../images/ico_client_img6.png)}
+.client .logo7 a { background-image: url(../images/ico_client_img7.png)}
+.client .logo8 a { background-image: url(../images/ico_client_img8.png)}
+.client .logo9 a { background-image: url(../images/ico_client_img9.png)}
+.client .logo1 a:hover { background-image: url(../images/ico_client_img1_1.png)}
+.client .logo2 a:hover { background-image: url(../images/ico_client_img2_2.png)}
+.client .logo3 a:hover { background-image: url(../images/ico_client_img3_3.png)}
+.client .logo4 a:hover { background-image: url(../images/ico_client_img4_4.png)}
+.client .logo5 a:hover { background-image: url(../images/ico_client_img5_5.png)}
+.client .logo6 a:hover { background-image: url(../images/ico_client_img6_6.png)}
+.client .logo7 a:hover { background-image: url(../images/ico_client_img7_7.png)}
+.client .logo8 a:hover { background-image: url(../images/ico_client_img8_8.png)}
+.client .logo9 a:hover { background-image: url(../images/ico_client_img9_9.png)}
+.client .h2 { padding: 0 0 4rem;}
+.client .banner { padding: 4rem 0 0;}
+.client .banner li {overflow: hidden; float: left; width: 50%;}
+.client .banner li a { display: flex; flex-direction: column; justify-content: center;  position: relative; padding: 0 2.5rem; height: 9rem; color:#fff;}
+.client .banner li a strong { position: relative; z-index: 10; font-size: 1rem; line-height: 1; }
+.client .banner li a p { position: relative; z-index: 10;  padding: .85rem 0 0; font-size: .8rem; line-height: 1.1rem;}
+.client .banner li a img { position: absolute; left: 0; top: 0; right: 0; bottom: 0; transition:all .3s; }
+.client .banner li a:hover img {  transform:scale(1.2);}
+
+/* .swiper-container2 */
+.swiper-container2 { display: none; }
